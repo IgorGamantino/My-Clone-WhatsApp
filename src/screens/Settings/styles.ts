@@ -1,4 +1,4 @@
-import {View} from 'react-native';
+import {View,Platform} from 'react-native';
 import styled from 'styled-components/native'
 import Icones from 'react-native-vector-icons/FontAwesome'
 
@@ -15,7 +15,7 @@ export const Container = styled.ScrollView`
 
 export const Title = styled.Text`
   font-size: 30px;
-  margin-top: 20px;
+  margin-top: 30px;
   color:#fdfdfd;
   margin-bottom: 15px;
   padding-left: 15px;
@@ -69,19 +69,25 @@ export const ContainerStarWeb = styled.View`
   margin-top: 34px;
   background-color: ${TextColor.backgroundContainer};
   margin-bottom: 34px;
+  justify-content: flex-start;
+  flex-direction: row;
   `;
+export const ContainerIcons = styled.View`
+justify-content: space-around;
+width:30px;
+align-items:center;
+margin: 0px 5px;
+
+`;
 
 export const StarMessages = styled.View`
-
   height: 44px;
-  align-items: center;
-  flex-direction: row;
+  justify-content: center;
 `;
 
 export const WhatsAppWeb = styled.View`
   height: 44px;
-  align-items: center;
-  flex-direction: row;
+  justify-content: center;
   `;
 
 export const TextStar = styled.Text`
@@ -104,12 +110,14 @@ export const IconArrow = styled(Icones)`
 export const Middlecontainer = styled.View`
   height: 177px;
   background-color: ${TextColor.backgroundContainer};
+  margin-bottom: 34px;
+  justify-content: flex-start;
+  flex-direction: row;
 `;
 
 export const ContainerAccount = styled.View`
   height: 43px;
-  align-items: center;
-  flex-direction: row;
+  justify-content: center;
 `;
 export const TextAccount = styled.Text`
  color: ${TextColor.title};
@@ -118,8 +126,7 @@ export const TextAccount = styled.Text`
 
 export const ContainerChats = styled.View`
  height: 43px;
- align-items: center;
-  flex-direction: row;
+ justify-content: center;
 `;
 
 export const TextChats = styled.Text`
@@ -129,8 +136,7 @@ export const TextChats = styled.Text`
 
 export const ContainerNotifications = styled.View`
  height: 43px;
- align-items: center;
-  flex-direction: row;
+ justify-content: center;
 `;
 
 export const TextNotifications = styled.Text`
@@ -140,12 +146,59 @@ export const TextNotifications = styled.Text`
 
 export const ContainerStorage = styled.View`
  height: 43px;
- align-items: center;
-  flex-direction: row;
+ justify-content: center;
 `;
 
 export const TextStorage = styled.Text`
  color: ${TextColor.title};
  font-size: 16px;`;
 
-export const IconMiddle = styled.Image``;
+export const IconMiddle = styled.Image`
+`;
+
+export const ContainerHelpTell = styled.View`
+  height: 90px;
+background-color: ${TextColor.backgroundContainer};
+/* align-items: center */
+`;
+
+export const ContainerHelp = styled.View`
+height: 45px;
+align-items: center;
+  flex-direction: row;
+  margin-left:14px;
+
+`;
+
+export const ContainerTell = styled.View`
+height: 45px;
+align-items: center;
+  flex-direction: row;
+  margin-left:14px;
+`;
+
+export const TextInfo = styled.Text`
+  color: ${TextColor.title};
+  font-size: 16px;
+
+`;
+
+export const TextTell = styled.Text`
+ color: ${TextColor.title};
+ font-size: 16px;
+`;
+
+export const ContainerEnd = styled.View`
+  margin-top: 34px;
+  align-items: center;
+`;
+
+export const TextFrom = styled.Text`
+  color: ${TextColor.Description};
+  margin-bottom: 9px;
+`;
+
+export const TextFacebook = styled.Text`
+  color:#464646;
+  `;
+
